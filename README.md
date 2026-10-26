@@ -44,6 +44,7 @@ After learning PostgreSQL, I built this project to practise the full SQL workflo
 | 6 | What is the price per gram of each product (for 100 g and above)? |
 | 7 | How can products be grouped into Low, Medium and Bulk by weight? |
 | 8 | What is the total inventory weight for each category? |
+| 9 |Q9. Analyze Overstock vs Stockouts per Category |
 
 ## 🔍 Things I Noticed
 - The dataset has 3,732 rows, and one row had a price of 0, which I removed.
