@@ -133,3 +133,12 @@ SUM(weightInGms * availableQuantity) AS total_weight
 FROM zepto
 GROUP BY category
 ORDER BY total_weight;
+-- Q9. Analyze Overstock vs Stockouts per Category
+SELECT 
+    category,
+    COUNT(CASE WHEN outOfStock = TRUE OR availableQuantity = 0 THEN 1 END) AS stockout_count,
+    COUNT(CASE WHEN availableQuantity > 50 THEN 1 END) AS overstock_count,
+    ROUND(AVG(availableQuantity), 1) AS avg_available_qty
+FROM zepto
+GROUP BY category
+ORDER BY stockout_count DESC;
