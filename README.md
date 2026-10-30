@@ -66,8 +66,7 @@ After learning PostgreSQL, I built this project to practise the full SQL workflo
 3. Import `zepto_v2.csv` into the table (save it as CSV UTF-8 first if you get an encoding error).
 4. Run the rest of the queries one section at a time.
 
-## 🙏 Credits
-- Project inspired by Amlan Mohanty's YouTube tutorial.
+
 - Dataset from Kaggle.
 
 ## 📬 Connect
